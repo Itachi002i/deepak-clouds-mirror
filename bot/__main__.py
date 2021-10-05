@@ -45,12 +45,13 @@ def stats(update, context):
             f'<b>CPU:</b> {cpuUsage}%\n' \
             f'<b>RAM:</b> {memory}%\n' \
             f'<b>DISK:</b> {disk}%'
+update.effective_message.(stats, parse_mode=ParseMode.HTML)
 
 
 def start(update, context):
     start_string = f'''
 This bot can mirror all your links to Google Drive!
-Type /{BotCommands.HelpCommand} to get a list of available commands
+Type /1{BotCommands.HelpCommand} to get a list of available commands
 '''
     buttons = button_build.ButtonMaker()
     buttons.buildbutton("Support Channel", "https://t.me/Itachi_Mirror_Updates")
