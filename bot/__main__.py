@@ -89,89 +89,89 @@ def log(update, context):
 
 def bot_help(update, context):
     help_string_adm = f'''
-/{BotCommands.HelpCommand}: To get this message
+/1{BotCommands.HelpCommand}: To get this message
 
-/{BotCommands.MirrorCommand} [download_url][magnet_link]: Start mirroring the link to Google Drive.
+/1{BotCommands.MirrorCommand} [download_url][magnet_link]: Start mirroring the link to Google Drive.
 
-/{BotCommands.UnzipMirrorCommand} [download_url][magnet_link]: Starts mirroring and if downloaded file is any archive, extracts it to Google Drive
+/1{BotCommands.UnzipMirrorCommand} [download_url][magnet_link]: Starts mirroring and if downloaded file is any archive, extracts it to Google Drive
 
-/{BotCommands.TarMirrorCommand} [download_url][magnet_link]: Start mirroring and upload the archived (.tar) version of the download
+/1{BotCommands.TarMirrorCommand} [download_url][magnet_link]: Start mirroring and upload the archived (.tar) version of the download
 
-/{BotCommands.CloneCommand}: Copy file/folder to Google Drive
+/1{BotCommands.CloneCommand}: Copy file/folder to Google Drive
 
-/{BotCommands.CountCommand}: Count file/folder of Google Drive Links
+/1{BotCommands.CountCommand}: Count file/folder of Google Drive Links
 
-/{BotCommands.DeleteCommand} [link]: Delete file from Google Drive (Only Owner & Sudo)
+/1{BotCommands.DeleteCommand} [link]: Delete file from Google Drive (Only Owner & Sudo)
 
-/{BotCommands.WatchCommand} [youtube-dl supported link]: Mirror through youtube-dl. Click /{BotCommands.WatchCommand} for more help.
+/1{BotCommands.WatchCommand} [youtube-dl supported link]: Mirror through youtube-dl. Click /{BotCommands.WatchCommand} for more help.
 
-/{BotCommands.TarWatchCommand} [youtube-dl supported link]: Mirror through youtube-dl and tar before uploading
+/1{BotCommands.TarWatchCommand} [youtube-dl supported link]: Mirror through youtube-dl and tar before uploading
 
-/{BotCommands.CancelMirror}: Reply to the message by which the download was initiated and that download will be cancelled
+/1{BotCommands.CancelMirror}: Reply to the message by which the download was initiated and that download will be cancelled
 
-/{BotCommands.StatusCommand}: Shows a status of all the downloads
+/1{BotCommands.StatusCommand}: Shows a status of all the downloads
 
-/{BotCommands.ListCommand} [search term]: Searches the search term in the Google Drive, if found replies with the link
+/1{BotCommands.ListCommand} [search term]: Searches the search term in the Google Drive, if found replies with the link
 
-/{BotCommands.StatsCommand}: Show Stats of the machine the bot is hosted on
+/1{BotCommands.StatsCommand}: Show Stats of the machine the bot is hosted on
 
-/{BotCommands.AuthorizeCommand}: Authorize a chat or a user to use the bot (Can only be invoked by Owner & Sudo of the bot)
+/1{BotCommands.AuthorizeCommand}: Authorize a chat or a user to use the bot (Can only be invoked by Owner & Sudo of the bot)
 
-/{BotCommands.UnAuthorizeCommand}: Unauthorize a chat or a user to use the bot (Can only be invoked by Owner & Sudo of the bot)
+/1{BotCommands.UnAuthorizeCommand}: Unauthorize a chat or a user to use the bot (Can only be invoked by Owner & Sudo of the bot)
 
-/{BotCommands.AuthorizedUsersCommand}: Show authorized users (Only Owner & Sudo)
+/1{BotCommands.AuthorizedUsersCommand}: Show authorized users (Only Owner & Sudo)
 
-/{BotCommands.AddSudoCommand}: Add sudo user (Only Owner)
+/1{BotCommands.AddSudoCommand}: Add sudo user (Only Owner)
 
-/{BotCommands.RmSudoCommand}: Remove sudo users (Only Owner)
+/1{BotCommands.RmSudoCommand}: Remove sudo users (Only Owner)
 
-/{BotCommands.LogCommand}: Get a log file of the bot. Handy for getting crash reports
+/1{BotCommands.LogCommand}: Get a log file of the bot. Handy for getting crash reports
 
-/{BotCommands.ConfigMenuCommand}: Get Info Menu about bot config (Owner Only).
+/1{BotCommands.ConfigMenuCommand}: Get Info Menu about bot config (Owner Only).
 
-/{BotCommands.UpdateCommand}: Update Bot from Upstream Repo. (Owner Only).
+/1{BotCommands.UpdateCommand}: Update Bot from Upstream Repo. (Owner Only).
 
-/{BotCommands.UsageCommand}: To see Heroku Dyno Stats (Owner & Sudo only).
+/1{BotCommands.UsageCommand}: To see Heroku Dyno Stats (Owner & Sudo only).
 
-/{BotCommands.SpeedCommand}: Check Internet Speed of the Host
+/1{BotCommands.SpeedCommand}: Check Internet Speed of the Host
 
-/{BotCommands.MediaInfoCommand}: Get detailed info about replied media (Only for Telegram file).
+/1{BotCommands.MediaInfoCommand}: Get detailed info about replied media (Only for Telegram file).
 
-/{BotCommands.ShellCommand}: Run commands in Shell (Terminal).
+/1{BotCommands.ShellCommand}: Run commands in Shell (Terminal).
 
-/tshelp: Get help for Torrent search module.
+/1tshelp: Get help for Torrent search module.
 '''
 
     help_string = f'''
-/{BotCommands.HelpCommand}: To get this message
+/1{BotCommands.HelpCommand}: To get this message
 
-/{BotCommands.MirrorCommand} [download_url][magnet_link]: Start mirroring the link to Google Drive.
+/1{BotCommands.MirrorCommand} [download_url][magnet_link]: Start mirroring the link to Google Drive.
 
-/{BotCommands.UnzipMirrorCommand} [download_url][magnet_link]: Starts mirroring and if downloaded file is any archive, extracts it to Google Drive
+/1{BotCommands.UnzipMirrorCommand} [download_url][magnet_link]: Starts mirroring and if downloaded file is any archive, extracts it to Google Drive
 
-/{BotCommands.TarMirrorCommand} [download_url][magnet_link]: Start mirroring and upload the archived (.tar) version of the download
+/1{BotCommands.TarMirrorCommand} [download_url][magnet_link]: Start mirroring and upload the archived (.tar) version of the download
 
-/{BotCommands.CloneCommand}: Copy file/folder to Google Drive
+/1{BotCommands.CloneCommand}: Copy file/folder to Google Drive
 
-/{BotCommands.CountCommand}: Count file/folder of Google Drive Links
+/1{BotCommands.CountCommand}: Count file/folder of Google Drive Links
 
-/{BotCommands.WatchCommand} [youtube-dl supported link]: Mirror through youtube-dl. Click /{BotCommands.WatchCommand} for more help.
+/1{BotCommands.WatchCommand} [youtube-dl supported link]: Mirror through youtube-dl. Click /{BotCommands.WatchCommand} for more help.
 
-/{BotCommands.TarWatchCommand} [youtube-dl supported link]: Mirror through youtube-dl and tar before uploading
+/1{BotCommands.TarWatchCommand} [youtube-dl supported link]: Mirror through youtube-dl and tar before uploading
 
-/{BotCommands.CancelMirror}: Reply to the message by which the download was initiated and that download will be cancelled
+/1{BotCommands.CancelMirror}: Reply to the message by which the download was initiated and that download will be cancelled
 
-/{BotCommands.StatusCommand}: Shows a status of all the downloads
+/1{BotCommands.StatusCommand}: Shows a status of all the downloads
 
-/{BotCommands.ListCommand} [search term]: Searches the search term in the Google Drive, if found replies with the link
+/1{BotCommands.ListCommand} [search term]: Searches the search term in the Google Drive, if found replies with the link
 
-/{BotCommands.StatsCommand}: Show Stats of the machine the bot is hosted on
+/1{BotCommands.StatsCommand}: Show Stats of the machine the bot is hosted on
 
-/{BotCommands.SpeedCommand}: Check Internet Speed of the Host
+/1{BotCommands.SpeedCommand}: Check Internet Speed of the Host
 
-/{BotCommands.MediaInfoCommand}: Get detailed info about replied media (Only for Telegram file).
+/1{BotCommands.MediaInfoCommand}: Get detailed info about replied media (Only for Telegram file).
 
-/tshelp: Get help for Torrent search module.
+/1tshelp: Get help for Torrent search module.
 '''
 
     if CustomFilters.sudo_user(update) or CustomFilters.owner_filter(update):
